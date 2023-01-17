@@ -1,0 +1,204 @@
+.trust-pilot {
+  text-decoration: none;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+.display-m {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+     .display-c {
+    display: none;
+}
+
+.display-m {
+    display: block;
+}
+}
+
+
+
+.trust-pilot:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  border-radius: 5px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+
+  /****** 
+    optional values below 
+    ******/
+
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 5px;
+  
+  width: 20%;
+  background: green;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* optional hover classes used with anmiation */
+.trust-pilot:hover:before {
+  width: 50%;
+  background: orange;
+}
+
+
+.banner-container{
+    min-height: 400px;
+}
+
+.inner-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px 20px 60px;
+}
+
+.inner-img img{
+    width: 550px;
+    height: 100%;
+    margin-left: 50px;
+}
+
+
+.banner-inner-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 400px;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap');
+
+.banner-inner-text h1 {
+    /* text-align: center; */
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 55px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-inner-text p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.inner-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   background: #0af;
+   color: #fff;
+   min-height: 50px;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+.inner-btn:hover {
+    color: #fff;
+    background: rgb(29, 87, 116);
+    text-decoration: none;
+}
+
+
+
+
+.social-con ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+html {
+    overflow: scroll;
+-webkit-overflow-scrolling: touch;
+}
+
+.social-con {
+    text-align: center;
+    height: 200px;
+    /* background: #101010;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222; */
+    padding: 25px 0;
+}
+
+.social-con ul li a {
+    font-size: 45px;
+    padding: 20px 15px 20px 15px;
+}
+
+
+.top-text {
+    font-size: 40px;
+    line-height: 55px;
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+
+
+
+
+@media (max-width: 900px) {
+    .inner-img {
+        display: none;
+    }
+
+    .banner-inner-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .banner-inner-text p {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .banner-inner-text h1 {
+        text-align: center;
+        line-height: 45px;
+        font-size: 35px;
+        padding:10px!important;
+    }
+
+    .top-text {
+        font-size: 25px;
+        line-height: 28px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+}

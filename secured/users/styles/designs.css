@@ -1,0 +1,163 @@
+.fdesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin-bottom: 25px;
+}
+
+.mw-8 {
+    max-width: 800px;
+
+}
+
+.cnter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mw-5 {
+    max-width: 500px;
+}
+
+
+.mainf-design {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 20px;
+    /*box-shadow: 1px 3px 8px #888888;*/
+}
+
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.account_top1 {
+    padding: 25px 0;
+    width: 100%;
+    float: left;
+    border-top: 4px solid #1ba0f1;
+
+}
+
+.account_topt {
+    width: 100%;
+    float: left;
+    border-top: 2px solid #1ba0f1;
+    margin-top: -50px;
+    padding-top: -50px;
+}
+
+/*google translate Dropdown */
+
+#google_translate_element select {
+    background: #f6edfd;
+    color: #383ffa;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 8px
+}
+
+/*google translate link | logo */
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+/* google translate banner-frame */
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+
+.trade-form {
+    box-shadow: -3px 4px 9px 9px rgba(5,45,92,0.75);
+    -webkit-box-shadow: -3px 4px 9px 9px rgba(5,45,92,0.75);
+    -moz-box-shadow: -3px 4px 9px 9px rgba(5,45,92,0.75);
+    padding: 20px;
+}
+
+.trade-button-container {
+    margin-top: 25px;
+}
+
+.time-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100px;
+    border: 3px solid #1ba0f1;
+}
+
+
+.plan-con {
+    width: 250px;
+    min-height: 300px;
+}
+
+
+.drop-con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    box-shadow: 2px 7px 6px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 7px 6px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 7px 6px 5px rgba(0,0,0,0.75);
+}
+
+.bt-drop {
+    background: transparent!important;
+    border: none!important;
+
+}
+
+.dropdown-menu {
+    min-width: 450px!important;
+    margin-left: -20px!important;
+    margin-top: 20px;
+    border-radius: 0;
+    padding: 20px;
+    background: rgba(14, 55, 100,1);
+    width: 100%;
+    float: left;
+    border: 0;
+    box-shadow: 2px 13px 6px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 13px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 13px 6px -3px rgba(0,0,0,0.75);
+
+}
+
+.imgcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+
+}
+
+.imgcon img {
+    border-radius: 10px;
+}
+
+.wallet-btn-con {
+    margin-bottom: 25px!important;
+}
+
+.address-con {
+    margin-top: 25px;
+}
