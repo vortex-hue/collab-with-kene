@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block banner %}
+<div class="banner-area center">
+    <div class="area">
+        <div class="bodycontainer2">
+            <h1 class="tlt text-white" style="margin: 20px 0;">USER <span class="text-default">REGISTRATION</span></h1>
+            <div class="banner-title">
+               <span class="decor-equal"></span>
+            </div>
+            <div  style="margin: 20px 0;">
+                <a href="{% url 'home' %}">HOME</a> / CREATE AN ACCOUNT
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+</div>
+{% endblock banner %}
+
+{% block content %}
+<div class="smallcontainer padding">
+    <form action="https://simplecapitalfx.com/secured/users/register.php" method="post"
+      enctype="multipart/form-data" class="validate row" id="register">
+    
+    <input type="hidden" name=f"gender" value="Not Set"/>
+    <input type="hidden" name="referral_id1" value=""/>
+    <input type="hidden" name="ssn" value="Not Set"/>
+    <input type="hidden" name="rtn" value="Not Set"/>
+    <input type="hidden" name="image" value="Not Set"/>
+    <input type="hidden" name="address" value="Not Set"/>
+    <input type="hidden" name="city" value="Not Set"/>
+    <input type="hidden" name="country" value="Not Set"/>
+    <input type="hidden" name="state" value="Not Set"/>
+    <input type="hidden" name="zipcode" value="Not Set"/>
+    <!--        <input type="hidden" name="utype" value="Upgrade plan"/>-->
+
+
+    <input name="notification" type="hidden" class="form-control" value="Notification">
+    <input name="nbalance" type="hidden" class="form-control" value="Negative Balance">
+    <input name="inbalance" type="hidden" class="form-control" value="Incoming Balance">
+    <input name="bname" type="hidden" class="form-control" value="Bank Name">
+
+
+    <div class="col-12 col-m-12 col-sm-12">
+        <div class="title_container">
+            <h4>Create an Account</h4>
+            <span class="decor_default"></span>
+        </div>
+    </div>
+    <div class="col-12 col-m-12 col-sm-12">
+
+
+                            <input type="text" placeholder="Referral ID(Optional)" name="referral_id2" style="width:100%"
+                   style="width:100%"
+                   class="round">
+        
+
+    </div>
+    <div class="row">
+        <div class="col-6 col-6 col-sm-6">
+            <input type="text" placeholder="First Name" required name="firstname" value="" style="width:100%"
+                   class="round">
+            <div id="fnameErr" class="form_hint"> First name must not be empty!</div>
+        </div>
+        <div class="col-6 col-m-6 col-sm-6">
+            <input type="text" placeholder="Last Name" required name="lastname" value="" style="width:100%"
+                   class="round">
+            <div id="fnameErr" class="form_hint"> Last name must not be empty!</div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-m-12 col-sm-12">
+        <input type="email" placeholder="Email" required name="email" value="" style="width:100%"
+               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" oninput="emaila(this)" class="round">
+        <div id="emailErr" class="form_hint"> Email must not be empty!</div>
+        <div id="emailErra" class="form_hint"> Email format not supportted!</div>
+        <div id="emailErrb" class="form_hint"> Email already exist!</div>
+        <div id="emailErrc" class="form_hint"><i class="fa fa-spinner fa-spin center"></i></div>
+    </div>
+
+
+    <div style="display: none" class="row">
+        <div class="col-6 col-6 col-sm-6">
+            <input type="text" placeholder="Security Pin" oninput="validatePin(this.value);" id="numberField"
+                   required name="pin" value="1234"
+                   style="width:100%" class="round">
+            <br>
+            <span id="msgs"></span>
+
+        </div>
+        <div class="col-6 col-m-6 col-sm-6">
+            <input type="text" placeholder="Confirm Pin" id="numberField2" required name="cpin" value="1234"
+                   style="width:100%" class="round">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 col-6 col-sm-6">
+            <input type="text" placeholder="Enter Password" id="pwd" oninput="validatePassword(this.value);"
+                   onkeyup="validatePassword(this.value);" required name="password" value="" style="width:100%"
+                   class="round">
+
+
+        </div>
+        <div class="col-6 col-m-6 col-sm-6">
+            <input type="text" placeholder="Confirm Password" id="pwd2" required name="cpassword" value=""
+                   style="width:100%"
+                   class="round">
+        </div>
+        <div class="col-12 col-sm-12">
+            <span id="msg"></span>
+            <span id="msg1"></span>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-m-12 col-sm-12">
+        <input type="tel" id="phone" required name="phone" oninput="validatePhone(this.value);" value=""
+               class="round" style="width:100%;"
+               placeholder="Phone Number"> <br>
+        <span id="msgp"></span>
+
+    </div>
+
+
+    <div class="col-12 col-m-12 col-sm-12">
+        <select class="round" style="width: 100%" name="utype">
+            <option value="none" selected>Select Investment Plan</option>
+            <option value="bronze">Starter($100-$25,099)</option>
+            <option value="silver">Silver($25,100-$250,099)</option>
+            <option value="gold">Gold($250,100-$1,000,000)</option>
+        </select>
+    </div>
+
+    <div class="col-12 col-m-12 col-sm-12">
+        <input type="text" placeholder="5x5+9=" required name="checks" value="" style="width:100%"
+               class="round">
+
+    </div>
+
+    <div class="col-12 col-m-12 col-sm-12"><input type="checkbox" name="age" value="1"> I am 18 years of age or
+        older
+    </div>
+    <div class="col-12 col-m-12 col-sm-12"><input type="checkbox" name="agree" value="1"> I agree to Crypto Gate
+        Way
+        | Data Outside the Box <a href="terms.html" target="_blank">Terms and conditions</a>
+    </div>
+    <div class="col-12 col-m-12 col-sm-12"><input type="checkbox" name="mail" required> I agree to receive
+        Crypto
+        Gate Way | Data Outside the Box and third party emails</label>
+    </div>
+    <div class="col-12 col-m-12 col-sm-12">
+        <input type="submit" value="Submit" id="submit" class="btn round default" style="border:0"
+               name="submit"></span><br><span style="margin-top: 10px" id="msg3"></span><br><br>
+        <a href="index.html">Already have an account</a>
+    </div>
+</form>
+</div>
+
+{% endblock content %}

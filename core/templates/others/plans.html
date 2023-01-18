@@ -1,0 +1,38 @@
+{% extends 'base-others.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="banner-area center">
+    <div class="area">
+        <div class="bodycontainer2">
+            <h1 class="tlt text-white" style="margin: 20px 0;">Investment <span class="text-default">Plans</span></h1>
+            <div class="banner-title">
+               <span class="decor-equal"></span>
+            </div>
+            <div  style="margin: 20px 0;">
+                <a href="{% url 'home' %}">HOME</a> / Investment Plans 
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+</div>
+{% endblock banner %}
+
+{% block content %}
+
+<div class="bodycontainer">
+    <div class="dark" style="padding: 40px 20px 80px 20px" id="investment">
+        <div class="bodycontainer center">
+            <h1 class="tlt text-white">
+                AFFORDABLE <span class="text-default">PACKAGES</span>
+            </h1>
+            <p class="sub_tlt">CHOOSE YOUR PREFERABLE PLAN FOR INVESTMENT.</p>
+            <div class="row">
+                <script src="{% static '../static.elfsight.com/platform/platform.js' %}" defer></script>
+                <div class="elfsight-app-21325e89-86dd-440d-b723-dfcb2ad1605e"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

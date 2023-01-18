@@ -1,0 +1,67 @@
+{% load static %}
+
+<header class="header">
+    <div class="container row">
+    <ul class="topheader">
+        <li class="logo">
+            <div class="bodycontainer">
+                <button class="btn round default right menu"><i class="fa fa-align-right"></i></button>
+                <a href="{% static 'index.html' %}">
+                    <img src="{% static 'images/logo.png' %}" title="Simple Capital FX | Data Outside the Box"/>
+                </a>
+            </div>
+        </li>
+        <li class="data">
+            <div class="bodycontainer">
+                <row>
+                  <script src="{% static '../static.elfsight.com/platform/platform.js' %}"></script>
+                  <script>
+                    window.onload = function () {
+                      document.getElementById("topcount").innerHTML =
+                        '<div class="elfsight-app-cc8e1ecd-9437-4837-8ff8-4a766398086e"></div>';
+                    };
+                  </script>
+    
+                  <div class="col-9">
+                    <div id="topcount"></div>
+                  </div>
+    
+                  <div class="col-3">
+                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                      <div class="btcwdgt-price" bw-cur="usd"></div>
+                      Live Bitcoin price
+                    </div>
+                  </div>
+                </row>
+              </div>
+        </li>
+        <li class="account row">
+            <div class="bodycontainer">
+                <div class="button_container"><a href="secured/users/index.html" class="btn"><i class="fa fa-user"></i> SIGN IN</a></div>
+                    <div class="button_container"><a href="secured/users/register.html" class="btn v2"><i class="fa fa-user-plus"></i> REGISTER</a></div>		</div>
+        </li>
+    </ul>
+    </div>
+    <section class="custom-social-proof" style="display: block";>
+        <div class="custom-notification col-md-12">
+          <div class="custom-notification-container">
+            <div class="custom-notification-image-wrapper">
+              <img id="map" src="{% static 'favicon.png' %}" style="width: 50px; height: 50px">
+            </div>
+            <div class="custom-notification-content-wrapper">
+              <p class="custom-notification-content">
+                <span id="country">Ryan</span> from <span id="product">Sandhurst  has just earned $1672</span>
+                <small>
+                
+                  <span id="time">1</span> hour ago &nbsp; 
+                 
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class="custom-close"></div>
+        </div>
+      </section>
+    </header>
+    
+

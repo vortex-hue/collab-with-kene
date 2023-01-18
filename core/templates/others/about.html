@@ -1,0 +1,57 @@
+{% extends 'base-others.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="banner-area center">
+    <div class="area">
+        <div class="bodycontainer2">
+            <h1 class="tlt text-white" style="margin: 20px 0;">About <span class="text-default">Us</span></h1>
+            <div class="banner-title">
+               <span class="decor-equal"></span>
+            </div>
+            <div  style="margin: 20px 0;">
+                <a href="{% url 'home' %}">HOME</a> / About Us 
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+</div>
+{% endblock banner %}
+
+{% block content %}
+<div class="bodycontainer">
+	<h2 class="top-text">Our goal <span style="color: #0af;">is to give people a way into the world of an open financial system.</span></h2>
+	<div class="row">
+		<div class="col-6">
+			<img id="about-us" class="img-responsive img-about-us" src="{% static 'images/about-1.jpg' %}" alt="about us">
+			<h5>There is a lot to be said for being upfront and honest with our traders, even if that means that we make money for them or lose money for them. There are a lot of different things that the stock market can do to you, and we want them to see how trades are made and how to deal with them. We've had to deal with a lot of problems in this business, but we've been able to get through them thanks to hard work, dedication, and a strong desire to succeed. The main reasons we were able to do this were because we were dedicated to learning, and because we kept going. Our goal at www.simplecapitalfx.com is to help our investors make a lot of money. In fact, most of our clients come to us through word of mouth, which says a lot!</h5>
+		</div>
+		<div class="col-6">
+			<img id="about-us" class="img-responsive img-about-us" src="{% static 'images/about-2.jpg' %}" alt="about us">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<img id="about-us" style="margin-bottom: 50px" class="img-responsive img-about-us" src="{% static 'images/about-3.jpg' %}" alt="about us">
+		</div>
+		<div class="col-6">
+			<div class="container-about">
+				<h5>In the beginning, simplecapitalfx.com was one of the first platforms to make it easy for people to buy and sell crypto with money from their bank accounts or credit cards. We put a lot of time and energy into developing and maintaining strong relationships with a lot of well-known banks in the key markets. We have a lot of tools for trading Bitcoin, Bitcoin Cash, Ethereum, Ripple, Stellar, Litecoin, Tron, and other crypto assets right now. There are currencies you can trade these cryptocurrencies for. You can trade these currencies for money like dollars, euros, pounds, and rubles. We know that mobility is important, so we have a website, iOS and Android mobile apps, WebSocket, and a REST API that you can use to trade.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<div class="container-about">
+				<h5>Over 250 people work for simplecapitalfx.com, which has offices in the United Kingdom, the United States of America, Ukraine, Cyprus, and Gibraltar. Our regulatory successes and development of new services for specific groups have helped us move into new markets across the world. As cryptocloakfx has grown over the last few years, it has become a group of businesses with licenses in a lot of different places. It has been approved by the Financial Crimes Enforcement Network (FinCEN), which is part of the US Department of the Treasury. Cryptocloakfx LTD has been approved as a Money Services Business (MSB). The Gibraltar Financial Services Commission has given cryptocloakfx Limited a license to use Distributed Ledger Technology (DLT) (GFSC). There are 31 states in the United States where cryptocloakfx Corp. has a license to move money. They're still working to get more licenses. In order to get a Digital payment token service license from the Monetary Authority of Singapore, cryptocloakfx LTD has done this. As time goes on, we keep adding new services and improving the ones we already have. It's always on our minds to make sure we earn your trust. Our company has always tried to work with regulators in a way that is both effective and trustworthy. Our teams are always working to stay up to date with new regulations and standards in the financial industry. As a founding member of CryptoUK, a group that aims to build cooperation between major cryptocurrency players and the UK's regulatory bodies, cryptocloakfx is also a big supporter of the group.</h5>
+			</div>
+		</div>
+		<div class="col-6" style="display: flex; justify-content: center; align-items: center">
+			<img id="about-us" style="margin-bottom: 50px" class="img-responsive img-about-us" src="{% static 'images/about-4.jpg' %}" alt="about us">
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

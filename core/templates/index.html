@@ -1,0 +1,803 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js">
+  <!-- Mirrored from www.simplecapitalfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Mar 2022 12:03:32 GMT -->
+  <!-- Added by HTTrack -->
+  <!-- Mirrored from simplecapitalfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jan 2023 01:13:34 GMT -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <!-- /Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'trade/favicon.png' %}" rel="icon" type="image/x-icon" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="{% static '../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" />
+
+    <title>Simple Capital FX | Data Outside the Box</title>
+    <link rel="manifest" href="js/manifest.json" />
+    <meta name="theme-color" content="#FD961A" />
+    <meta name="msapplication-navbutton-color" content="#FD961A" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FD961A" />
+
+    <meta name="theme-color" content="#FD961A" />
+    <meta name="msapplication-navbutton-color" content="#FD961A" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FD961A" />
+
+    <link href="favicon.png" rel="icon" type="image/x-icon" />
+    <link rel="icon" sizes="192x192" href="{% static 'trade/images/icon/icon-192.html' %}" />
+
+    <meta
+      name="keywords"
+      content="Simple Capital FX, Bitcoin Investment, Bitcoin Trading Company"
+    />
+    <meta property="og:image" content="{% static 'images/logo-showcase.png' %}" />
+
+    <meta
+      name="msapplication-square310x310logo"
+      content="{% static 'images/icon/icon-310x310.png' %}"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="{% static 'images/icon/icon-70x70.html' %}"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="{% static 'images/icon/icon-150x150.png' %}"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="{% static 'images/icon/icon-310x150.html' %}"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="{% static 'images/icon/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="{% static 'images/icon/apple-touch-icon-57x57.html' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="{% static 'images/icon/apple-touch-icon-72x72.html' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="{% static 'images/icon/apple-touch-icon-114x114.png' %}"
+    />
+    <!--    <link-->
+    <!--            rel="apple-touch-icon-precomposed"-->
+    <!--            sizes="144x144"-->
+    <!--            href="images/icon/apple-touch-icon-144x144.png"-->
+    <!--    />-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pop-up.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'use.fontawesome.com/releases/v5.6.3/css/all.html' %}"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.html' %}"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Simple Capital FX | Data Outside the Box"
+    />
+    <meta
+      property="og:title"
+      content="Your Trusted Bitcoin  Mining and Investment Company"
+    />
+    <meta
+      name="description"
+      content="Simple Capital FX is totally different from its competitors trying to achieve something special starting with the...Our expertise in large-scale high-tech site development, mechanical/electrical engineering & manufacturing, facilities management, and cryptocurrency makes for a perfect provider for custom high-power cryptocurrency data centers in Central Washington."
+    />
+    <meta
+      property="og:description"
+      content="Simple Capital FX is totally different from its competitors trying to achieve something special starting with the...Our expertise in large-scale high-tech site development, mechanical/electrical engineering & manufacturing, facilities management, and cryptocurrency makes for a perfect provider for custom high-power cryptocurrency data centers in Central Washington."
+    />
+    <meta property="og:type" content="website" />
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+
+    <link href="{% static 'css/select2.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <script>
+      $(document).ready(function () {
+        function close_accordion_section() {
+          $('.accordion .accordion-section-title').removeClass('active')
+          $('.accordion .accordion-section-content')
+            .slideUp(300)
+            .removeClass('open')
+        }
+
+        $('.accordion-section-title').click(function (e) {
+          // Grab current anchor value
+          var currentAttrValue = $(this).attr('href')
+
+          if ($(e.target).is('.active')) {
+            close_accordion_section()
+          } else {
+            close_accordion_section()
+
+            // Add active class to section title
+            $(this).addClass('active')
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue)
+              .slideDown(300)
+              .addClass('open')
+          }
+
+          e.preventDefault()
+        })
+      })
+    </script>
+    <script>
+      var fade_outthis = function () {
+        $('.alert').fadeOut().empty()
+      }
+      setTimeout(fade_outthis, 8000)
+
+      $(document).ready(function () {
+        $('.closebtn').click(function () {
+          $(this).parent().fadeOut().empty()
+        })
+      })
+    </script>
+  </head>
+  <body class="loading_it">
+
+    {% include 'header.html' %}
+    {% include 'nav.html' %}
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+
+      <script
+        type="text/javascript"
+        src="{% static '../s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js' %}"
+        async
+      >
+        {
+            "symbols": [
+            {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+            },
+            {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100"
+            },
+            {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+            },
+            {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+            },
+            {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+            }
+        ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <script>
+      $('.menu').click(function () {
+        $('nav').slideToggle()
+      })
+    </script>
+
+    <div class="preloader">
+      <div id="bitcoin">
+        <img class="icn-spinner" src="{% static 'favicon.png' %}" alt="" />
+      </div>
+    </div>
+    <script>
+      /*--window load functions--*/
+      jQuery(window).load(function () {
+        var preLoder = $('.preloader')
+        preLoder.fadeOut(500)
+        $('body').removeClass('loading_it')
+      })
+    </script>
+
+    <style>
+      .icn-spinner {
+        animation: spin-animation 0.5s infinite;
+        display: inline-block;
+      }
+
+      @keyframes spin-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(359deg);
+        }
+      }
+    </style>
+
+    <script>
+      $(function () {
+        $('#tabs').tabs()
+      })
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
+    <style>
+      .slick-dots {
+        bottom: -10px !important;
+      }
+      .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+      }
+    </style>
+
+    {% include 'header-home.html' %}
+    {% include 'aboutus-home.html' %}
+
+    {% include 'aims.html' %}
+    
+    <section style="padding: 1rem;">
+      <div
+        style="
+          height: 669px;
+          background-color: #ffffff;
+          overflow: hidden;
+          box-sizing: border-box;
+          border: 1px solid #56667f;
+          border-radius: 4px;
+          text-align: right;
+          line-height: 14px;
+          font-size: 12px;
+          font-feature-settings: normal;
+          text-size-adjust: 100%;
+          box-shadow: inset 0 -20px 0 0 #56667f;
+          padding: 0px;
+          margin: 0px;
+          width: 100%;
+        "
+      >
+        <div style="height: 649px; padding: 0px; margin: 0px; width: 100%;">
+          <iframe
+            src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=10&pref_coin_id=1505&graph=yes"
+            width="100%"
+            height="645px"
+            scrolling="auto"
+            marginwidth="0"
+            marginheight="0"
+            frameborder="0"
+            border="0"
+            style="border: 0; margin: 0; padding: 0;"
+          ></iframe>
+        </div>
+        <div
+          style="
+            color: #ffffff;
+            line-height: 14px;
+            font-weight: 400;
+            font-size: 11px;
+            box-sizing: border-box;
+            padding: 2px 6px;
+            width: 100%;
+            font-family: Verdana, Tahoma, Arial, sans-serif;
+          "
+        >
+          <a
+            href="https://coinlib.io"
+            target="_blank"
+            style="
+              font-weight: 500;
+              color: #ffffff;
+              text-decoration: none;
+              font-size: 11px;
+            "
+          >
+            Cryptocurrency Prices
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    {% include 'services.html' %}
+
+    <script src="{% static 'js/jquery-modal-video.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/modal-video.min.css' %}" />
+    <script>
+      $('.js-video-button').modalVideo()
+    </script>
+
+    {% include 'investment-home.html' %}
+    
+    <style>
+      .irs-single,
+      .irs-min,
+      .irs-max {
+        display: none !important;
+      }
+      .irs-bar {
+        border-top: 1px solid #0af !important;
+        border-bottom: 1px solid #0af !important;
+        background: #0af !important;
+      }
+      .irs-bar-edge {
+        border: 1px solid #0af !important;
+        background: #0af !important;
+        background: #0af !important;
+      }
+      .irs-slider {
+        border: 3px solid #aaa !important;
+        background: #0af !important;
+      }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/ion.rangeSlider.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/ion.rangeSlider.skinHTML5.css' %}" />
+    <script src="{% static 'js/ion.rangeSlider.min.js' %}"></script>
+    <script>
+      var $range = $('.range_47')
+      $range.ionRangeSlider()
+
+      $range.on('change', function () {
+        var $this = $(this),
+          value = $this.prop('value')
+        var output = $this.prop('value') * ($this.data('cent') / 100)
+        $('#' + $this.data('id')).val('$ ' + $this.prop('value'))
+        $('#' + $this.data('per')).php('$ ' + output.toFixed(1))
+        $('#' + $this.data('total')).php(
+          '$ ' + (output * $this.data('times')).toFixed(1),
+        )
+        console.log('Value: ' + value)
+      })
+    </script>
+    {% include 'calculator.html' %}
+    <style>
+      .btcwdgt.btcwdgt-chart .btcwdgt-footer {
+        display: none !important;
+      }
+      .btcwdgt-headlines.btcwdgt-clean {
+        margin: 0 auto !important;
+        border: 1px solid #333 !important;
+        box-shadow: none !important;
+        max-width: 615px !important;
+        width: 100%;
+      }
+    </style>
+
+    <!-- <style>
+      .dark.reviews {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .dark.reviews {
+          display: block;
+        }
+      }
+    </style> -->
+
+   {% include 'testimonies.html' %}
+
+    <script type="text/javascript" src="{% static 'js/pop-up.js' %}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.html' %}"
+    ></script>
+
+    <script src="{% static 'widgets.bitcoin.com/widget.html' %}" id="btcwdgt"></script>
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <script>
+      /* ----------------------------------------------------------- */
+      /*  VARIABLES FOR SELECT INPUT AND BITCOIN CALCULATOR FORM
+      /* ----------------------------------------------------------- */
+
+      var userAgent = navigator.userAgent.toLowerCase(),
+        plugins = {
+          selectFilter: $('#currency-select'),
+          btcCalculator: $('#bitcoin-calculator'),
+        }
+
+      /* ----------------------------------------------------------- */
+      /*  REPLACE OLD SELECT IN BITCOIN CALCULATOR FORM
+      /* ----------------------------------------------------------- */
+
+      if (plugins.selectFilter.length) {
+        for (var i = 0; i < plugins.selectFilter.length; i++) {
+          var select = $(plugins.selectFilter[i])
+          select.select2({
+            placeholder: select.attr('data-placeholder')
+              ? select.attr('data-placeholder')
+              : false,
+            minimumResultsForSearch: select.attr('data-minimum-results-search')
+              ? select.attr('data-minimum-results-search')
+              : 10,
+            maximumSelectionSize: 3,
+            dropdownCssClass: select.attr('data-dropdown-class')
+              ? select.attr('data-dropdown-class')
+              : '',
+          })
+        }
+      }
+
+      /* ----------------------------------------------------------- */
+      /*  BITCOIN CALCULATOR [ WWW.BLOCKCHAIN.INFO API ]
+      /* ----------------------------------------------------------- */
+
+      if (plugins.btcCalculator.length) {
+        $.getJSON('https://blockchain.info/ticker', function (btcJsonData) {
+          var currencyList = []
+          var index = 0
+
+          for (var currency in btcJsonData) {
+            currencyList.push({
+              id: index,
+              text: currency,
+            })
+            index++
+          }
+
+          for (var i = 0; i < plugins.btcCalculator.length; i++) {
+            var btcForm = $(plugins.btcCalculator[i]),
+              btcFormInput = $(btcForm.find('[name="btc-calculator-value"]')),
+              btcFormOutput = $(btcForm.find('[name="btc-calculator-result"]')),
+              btcFormCurrencySelect = $(
+                btcForm.find('[name="btc-calculator-currency"]'),
+              )
+
+            btcFormCurrencySelect.select2({
+              placeholder: btcFormCurrencySelect.attr('data-placeholder')
+                ? btcFormCurrencySelect.attr('data-placeholder')
+                : false,
+              minimumResultsForSearch: btcFormCurrencySelect.attr(
+                'data-minimum-results-search',
+              )
+                ? btcFormCurrencySelect.attr('data-minimum-results-search')
+                : 50,
+              maximumSelectionSize: 3,
+              dropdownCssClass: btcFormCurrencySelect.attr(
+                'data-dropdown-class',
+              )
+                ? btcFormCurrencySelect.attr('data-dropdown-class')
+                : '',
+              data: currencyList,
+            })
+
+            if (btcFormInput.length && btcFormOutput.length) {
+              // BTC => Currency
+              ;(function (btcFormInput, btcFormOutput, btcFormCurrencySelect) {
+                var lastChanged = 'btc'
+
+                btcFormInput.on('input', function () {
+                  // store current positions in variables
+                  var selectionStart = this.selectionStart,
+                    selectionEnd = this.selectionEnd
+
+                  this.value = toCryptoCurrencyFormat(this.value)
+
+                  // restore cursor position
+                  this.setSelectionRange(selectionStart, selectionEnd)
+
+                  btcFormOutput.val(
+                    toCurrencyFormat(
+                      '' +
+                        btcJsonData[
+                          btcFormCurrencySelect.select2('data')[0].text
+                        ]['buy'] *
+                          this.value,
+                    ),
+                  )
+                  lastChanged = 'btc'
+                })
+
+                // Currency => BTC
+                btcFormOutput.on('input', function () {
+                  // store current positions in variables
+                  var selectionStart = this.selectionStart,
+                    selectionEnd = this.selectionEnd
+
+                  this.value = toCurrencyFormat(this.value)
+
+                  // restore cursor position
+                  this.setSelectionRange(selectionStart, selectionEnd)
+
+                  btcFormInput.val(
+                    toCryptoCurrencyFormat(
+                      '' +
+                        this.value /
+                          btcJsonData[
+                            btcFormCurrencySelect.select2('data')[0].text
+                          ]['sell'],
+                    ),
+                  )
+                  lastChanged = 'currency'
+                })
+
+                btcFormInput.trigger('input')
+                btcFormOutput.blur()
+
+                btcFormCurrencySelect.on('change', function () {
+                  if (lastChanged === 'btc') {
+                    btcFormOutput.val(
+                      toCurrencyFormat(
+                        '' +
+                          btcJsonData[
+                            btcFormCurrencySelect.select2('data')[0].text
+                          ]['buy'] *
+                            btcFormInput.val(),
+                      ),
+                    )
+                  } else {
+                    btcFormInput.val(
+                      toCryptoCurrencyFormat(
+                        '' +
+                          btcFormOutput.val() /
+                            btcJsonData[
+                              btcFormCurrencySelect.select2('data')[0].text
+                            ]['sell'],
+                      ),
+                    )
+                  }
+                })
+              })(btcFormInput, btcFormOutput, btcFormCurrencySelect)
+            }
+          }
+        }).fail(function () {
+          console.log(
+            'Error while fetching data from https://blockchain.info/ticker',
+          )
+        })
+      }
+
+      function toCurrencyFormat(stringValue) {
+        var value = parseFloat(stringValue.replace(/[^\d.]/g, '')).toFixed(2)
+        return $.isNumeric(value) ? value : 0
+      }
+
+      function toCryptoCurrencyFormat(stringValue) {
+        var value = stringValue.replace(/[^\d.]/g, '')
+        return $.isNumeric(value) ? value : 0
+      }
+    </script>
+
+    <script
+      src="{% static 'slick/slick.js' %}"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="{% static 'slick/slick-animation.min.js' %}"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      // Init slick slider + animation
+      $(document).ready(function () {
+        $('.Modern-Slider').slick({
+          autoplay: true,
+          autoplaySpeed: 10000,
+          speed: 600,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          pauseOnHover: false,
+          dots: false,
+          pauseOnDotsHover: true,
+          cssEase: 'linear',
+          // fade:true,
+          draggable: false,
+          prevArrow: '<button class="PrevArrow"></button>',
+          nextArrow: '<button class="NextArrow"></button>',
+        })
+        $('.testimonials').slick({
+          autoplay: true,
+          autoplaySpeed: 10000,
+          speed: 600,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          pauseOnHover: false,
+          dots: false,
+          arrows: false,
+          adaptiveHeight: true,
+        })
+      })
+    </script>
+    <a
+      href="#"
+      id="back-to-top"
+      class="back-to-top fa fa-arrow-up show-back-to-top"
+    ></a>
+    <script>
+      /*--window Scroll functions--*/
+      $(window).on('scroll', function () {
+        /*--show and hide scroll to top --*/
+        var ScrollTop = $('#back-to-top')
+        if ($(window).scrollTop() > 500) {
+          ScrollTop.fadeIn(1000)
+        } else {
+          ScrollTop.fadeOut(1000)
+        }
+      })
+    </script>
+   
+   {% include 'footer.html' %}
+
+    <script src="{% static 'trade/js/particle.js' %}"></script>
+    <script>
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 100, density: { enable: true, value_area: 800 } },
+          color: { value: '#ffffff' },
+          shape: {
+            type: 'circle',
+            stroke: { width: 0, color: '#000000' },
+            polygon: { nb_sides: 5 },
+            image: { src: "{% static 'img/github.svg' %}", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: { enable: true, mode: 'repulse' },
+            onclick: { enable: true, mode: 'push' },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      })
+    </script>
+    <script>
+      ;(function (b, i, t, C, O, I, N) {
+        window.addEventListener(
+          'load',
+          function () {
+            if (b.getElementById(C)) return
+            ;(I = b.createElement(i)), (N = b.getElementsByTagName(i)[0])
+            I.src = t
+            I.id = C
+            N.parentNode.insertBefore(I, N)
+          },
+          false,
+        )
+      })(document, 'script', 'widgets.bitcoin.com/widget.html', 'btcwdgt')
+    </script>
+
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+      window.__lc = window.__lc || {}
+      window.__lc.license = 14079852
+      ;(function (n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n)
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: '2.0',
+          on: function () {
+            i(['on', c.call(arguments)])
+          },
+          once: function () {
+            i(['once', c.call(arguments)])
+          },
+          off: function () {
+            i(['off', c.call(arguments)])
+          },
+          get: function () {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load.",
+              )
+            return i(['get', c.call(arguments)])
+          },
+          call: function () {
+            i(['call', c.call(arguments)])
+          },
+          init: function () {
+            var n = t.createElement('script')
+            ;(n.async = !0),
+              (n.type = 'text/javascript'),
+              (n.src = "{% static '../cdn.livechatinc.com/tracking.js' %}"),
+              t.head.appendChild(n)
+          },
+        }
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e)
+      })(window, document, [].slice)
+    </script>
+    <noscript>
+      <a href="https://www.livechat.com/chat-with/14079852/" rel="nofollow">
+        Chat with us
+      </a>
+      , powered by
+      <a
+        href="https://www.livechat.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+      >
+        LiveChat
+      </a>
+    </noscript>
+    <!-- End of LiveChat code -->
+  </body>
+
+  <!-- Mirrored from simplecapitalfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jan 2023 01:18:00 GMT -->
+</html>
